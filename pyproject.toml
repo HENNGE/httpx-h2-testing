@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "httpx-h2-testing"
+version = "0.1.0"
+description = ""
+authors = ["Jonas Obrist <jonas.obrist@hennge.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+httpx = "^0.11.1"
+h2 = "^3.2.0"
+cryptography = "^2.8"
+click = "^7.0"
+
+[tool.poetry.scripts]
+httpx-h2-testing = "httpx_h2_testing.cli:main"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
